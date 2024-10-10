@@ -92,7 +92,7 @@ body{
  }
 
  /*================================= footer ======================================*/
-
+/*
  .c-footer{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -112,7 +112,7 @@ body{
 }
 
 /*============================= imagem cabeça ================================*/
-
+/*
 .c-footer div:nth-child(1){
     grid-row: 1 / -1;
 }
@@ -133,7 +133,7 @@ body{
 }
 
  /*================================= fone ======================================*/
-
+/*
 .c-iconemail{
     background-color: rgb(255, 0, 0);
     grid-area: iconemail;
@@ -161,7 +161,7 @@ body{
 }
 
  /*================================= localizacao ======================================*/
-
+/*
  .c-iconlocalizacao{
     background-color: rgb(255, 0, 0);
     grid-area: iconlocalizacao;
@@ -191,7 +191,7 @@ body{
 }
 
  /*==================================== email =========================================*/
-
+/*
  .c-icontlefone{
     background-color: rgb(255, 0, 0);
     grid-area: icontlefone;
@@ -219,7 +219,7 @@ body{
     font-size: 19px;
     right: 5px;
 }
-
+*/
  /*======================= mediaQuery =======================*/
 @media screen and (min-width: 768px) {
     .c-bodypage{
