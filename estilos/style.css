@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.c-bodypage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    height: 100vh;
+    margin: 0px;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+body{
+    background-color: rgba(182, 89, 46, 0.74);
+}
+
+.c-header{
+    background-color: white;
+    grid-area: header;
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+}
+.imglogo{
+    width: 291.5px;
+    height: 156.5px;
+    display: block;
+    margin: 0px auto;
+}
+
+
+.titulo{
+    text-align: center;
+    margin: 10px;
+    color: rgb(230, 4, 4);
+    font-weight: normal;
+}
+
+
+
+.c-main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+}
+
+.p1{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+.p2{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+.p3{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+ }
+
+ .botao{
+    text-align: center;
+    margin: 30px;
+ }
+
+ .c-main a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(81, 182, 98);
+    border-radius: 50px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    margin: auto;
+ }
+
+ .p4{
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 15px 15px 15px 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+ /*================================= footer ======================================*/
+
+ .c-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ".  iconemail "   
+    "cabecao  iconlocalizacao "
+    ".   icontlefone "
+    ;
+    padding: 8px 0px 0px 0px;
+ }
+
+.c-footer{
+    background-color: rgb(255, 0, 0);
+    grid-area: footer;
+    border-radius: 0px 0px 15px 15px;
+}
+
+/*============================= imagem cabeça ================================*/
+
+.c-footer div:nth-child(1){
+    grid-row: 1 / -1;
+}
+
+.c-cabecao{
+    background-color: rgb(255, 0, 0);
+    grid-area: cabecao;
+
+}
+
+.imgcabcao{
+    width: 144.75px;
+    height: 162px;
+    position: relative;
+    top: 36px;
+    object-position: -50px -25px;
+
+}
+
+ /*================================= fone ======================================*/
+
+.c-iconemail{
+    background-color: rgb(255, 0, 0);
+    grid-area: iconemail;
+    position: relative;
+    right: 10px;
+    margin: auto;
+}
+
+
+.imgweb{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    right: 140px;
+    margin: auto;
+}
+
+.tweb{
+    display: inline;
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: 16px;
+    right: -65px;
+    margin: auto;
+}
+
+ /*================================= localizacao ======================================*/
+ .c-iconlocalizacao{
+    background-color: rgb(255, 0, 0);
+    grid-area: iconlocalizacao;
+    position: relative;
+    right: 12px;
+    margin: auto;
+    width: 220px;
+}
+
+
+.imglocaliza{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    right: 48px;
+    margin: auto;
+}
+
+.tlocaliza{
+    display: inline;
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: -0px;
+    right: -5px;
+    margin: auto;
+}
+ /*==================================== email =========================================*/
+
+ .c-icontlefone{
+    background-color: rgb(255, 0, 0);
+    grid-area: icontlefone;
+    position: relative;
+    margin: auto;
+    width: 200px;
+    right: 20px;
+}
+
+.imgfone{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    right: 49px;
+    margin: auto;
+}
+
+.tfone{
+    display: inline;
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: 16px;
+    right: 95px;
+    margin: auto;
+}
+ /*======================= mediaQuery =======================*/
+@media screen and (min-width: 768px) {
+    .c-bodypage{
+        width: 600px;
+        margin: auto;
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
