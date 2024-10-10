@@ -13,7 +13,7 @@
     "main"
     "footer";
     height: 100vh;
-    margin: 10px;
+    margin: 0px;
     grid-template-rows: 1fr 2fr 1fr;
 }
 
